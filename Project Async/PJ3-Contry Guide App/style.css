@@ -1,0 +1,118 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+body {
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0069e1;
+    color: #2d2d2d;
+}
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 520px;
+    background-color: #fff;
+    padding: 30px 34px 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+        rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    border-radius: 10px;
+}
+
+.form-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+}
+.input-search {
+    display: block;
+    flex: 1;
+    height: 100%;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(44, 59, 217);
+    padding: 14px 18px;
+    font-size: 18px;
+    color: black;
+}
+.btn-search {
+    width: 28%;
+    display: inline-block;
+    height: 100%;
+    background-color: rgb(57, 123, 255);
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+}
+.btn-search:hover {
+    opacity: 0.9;
+}
+.content {
+    margin-top: 34px;
+}
+.flag-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flag-img {
+    display: block;
+    width: 60%;
+}
+.name-country {
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.001px;
+    text-transform: uppercase;
+    color: #000;
+}
+.list-info {
+    margin-top: 30px;
+}
+.item-info {
+    margin-top: 12px;
+    font-size: 17px;
+}
+.item-info i {
+    color: #000;
+    font-weight: 500;
+}

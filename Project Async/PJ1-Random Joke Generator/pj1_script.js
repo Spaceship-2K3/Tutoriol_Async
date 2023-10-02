@@ -1,6 +1,8 @@
 const jokeContainer = document.querySelector("#joke");
 const btn = document.querySelector("#btn");
 // ! https://v2.jokeapi.dev/
+// ! get quotes  : https://api.quotable.io/random
+
 const url =
     "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
 
