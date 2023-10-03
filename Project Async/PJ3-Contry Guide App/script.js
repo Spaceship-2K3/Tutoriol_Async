@@ -3,7 +3,7 @@ const input_search = document.querySelector("#input-search");
 const content = document.querySelector("#content");
 
 btn_search.addEventListener("click", function (e) {
-    let country_name = input_search.value;
+    let country_name = input_search.value.toLowerCase();
     let final_URL = `https://restcountries.com/v3.1/name/${country_name}?fullText=true`;
     fetch(final_URL)
         .then((response) => {
@@ -56,5 +56,13 @@ btn_search.addEventListener("click", function (e) {
             */
             console.log(data);
             console.log(Object.keys(data[0].currencies)[0]);
+        })
+        .catch(() => {
+            if (country_name.length == 0) {
+                content.innerHTML = "";
+                content.innerHTML = `<h3>The input field cannot be empty</h3>`;
+            } else {
+                content.innerHTML = `<h3>Please enter a valid country name</h3>`;
+            }
         });
 });
